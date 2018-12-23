@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "558809519946",
+    "firebase_url": "https://prueba-33361.firebaseio.com",
+    "project_id": "prueba-33361",
+    "storage_bucket": "prueba-33361.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558809519946:android:4c62f8c72e303109",
+        "android_client_info": {
+          "package_name": "cl.maxsoft.mantm1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558809519946-1nelrheb551ovodqo2mvt4g82pla30m9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "558809519946-1nelrheb551ovodqo2mvt4g82pla30m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBavbk_N9T4E3c9jowAM2ZiNo2iSthMQio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

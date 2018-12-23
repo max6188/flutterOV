@@ -1,0 +1,33 @@
+//
+principal
+conversor := EDITOR
+database :="firestore"
+titulo := "Editar"
+autor := "MaxSoft"
+objetivo:="Editor de agenda médica"
+fechaCreacion :="2018-09-15"
+carpetaFisica := "C:\flutterPRG\03firestore\amedica"//no usado
+//
+libreriaFlutter := "mantener_agenda"                      //no usuado
+directorioGenerado := "mantener_agenda"                  //no usado
+copiaLibreria :="no"                                          //no usado
+//
+editor
+	nombre:="FrmEditorAgenda"=>"frmeditor_agenda"
+	coleccion:="dbMedicina"
+	claseData:="dbAgenda"
+    nombreSoporte:="soporte_frm_agenda"
+	parametro:=  "final String dBkey;","final String nombreDB;"	
+	willPopTitulo:="Pantalla contiene errores"
+	willPopDescripcion:="Realmente te vas?"
+	carga:="cargaCita"
+data
+ 	fecha:="cuando"=>"01/09/2018","30/09/2030","Fecha","F.de Compromiso"
+	combo:="donde"=>"Consultorio","Hóspital","FPopular","Siquiatra","Otro"=>"Consultorio"
+	combo:="que"=>"Medico", "Examen","Inyeccion"=>"Medico"
+	combo:="quien"=>"Mary", "Max","Ambos"=>"Mary"
+	asunto:="asunto"=>"30","Cual es el asunto","Asunto","Icons.announcement"
+	memo:="nota"=>"3","60","Ingrese una nota","Nota"
+	radio:="vencida"=>"Pendiente","Listo","Vencida"=>"Pendiente"
+	boton:=fecha"grabar","Grabar","Icono"
+final

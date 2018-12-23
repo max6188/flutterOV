@@ -1,0 +1,31 @@
+//
+principal
+conversor := SCAFFOLD
+titulo := "Principal"
+autor := "MaxSoft"
+objetivo:="Prestaciones"
+fechaCreacion :="2018-10-02"
+generaMain:=SI
+nombreArchivo:="frmpantalla_principal"
+nombreClase:="FrmPantallaPrincipal"
+home:=""
+//
+editor
+	floatingActionButton:=PANTALLA,"Icons.add","/huevona"
+drawer
+ 	header:="Ajustes","Colors.blue"
+	linea:=PANTALLA,"Icons.settings", "Configuración", "/huevona","Colors.teal.shade700"  //
+	linea:=PANTALLA,"Icons.home", 'Página Principal', "/","Colors.teal.shade700"
+	linea:=METODO,"Icons.favorite","Piola",""
+acercaDe
+	header:="Información App","Icons.info"
+	version:="V1.0.0"
+	nombre:="AMédica","Icons.favorite"
+tab
+    linea:=ICONO,"Icons.home","Huevona()"
+	linea:=TEXTO,"Chats",""
+	linea:=ICONO,"Icons.contacts",""
+botonera
+	linea:=ICONO,"Icons.access_time",'Inyección',"/huevona")
+	linea:=ICONO,"Icons.verified_user","Verifica",""
+final

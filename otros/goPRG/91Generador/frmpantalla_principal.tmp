@@ -1,0 +1,70 @@
+/// autor :MaxSoft
+/// fecha :2018-10-02
+/// correo:max82574971@gmail.com
+/// github:max6188
+/// objetivo:Prestaciones
+/// Version 1.0
+
+import 'package:flutter/material.dart';
+
+
+class FrmPantallaPrincipal extends StatefulWidget {
+    @override
+    _FrmPantallaPrincipal createState() => new _FrmPantallaPrincipal();
+}
+class _FrmPantallaPrincipal extends State<FrmPantallaPrincipal> with SingleTickerProviderStateMixin {
+    TabController controller;
+
+    @override
+    void initState() {
+       super.initState();
+       controller = new TabController(length:3, vsync: this);
+    }
+que onda
+
+    Drawer _getDrawer(BuildContext context) {
+        var header  = new  DrawerHeader(
+        child: Text('Ajustes'),
+        decoration: BoxDecoration(
+            color: Colors.blue,
+        ),
+    );
+
+    var info = new AboutListTile(
+        child: new Text('Información App'), 
+        applicationVersion:'V1.0.0',
+    	   applicationName:'AMédica',
+        applicationIcon: new Icon(Icons.favorite),
+        icon: new Icon(Icons.info),
+      );
+
+    ListTile _getItem(Icon icon, String description, String route){
+       return new ListTile(
+           leading: icon,
+           title: new Text(description),
+           onTap: () {
+           setState(() {
+               if(route!='') Navigator.of(context).pushNamed(route);
+               else {
+               }
+		      })
+	  });
+   }
+
+   
+   
+   class Experience extends StatefulWidget {
+  @override
+  _ExperienceState createState() => new _ExperienceState();
+}
+
+class _ExperienceState extends State<Experience> {
+  
+  @override
+  Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width; 
+
+    return new Container(),
+    );
+  }
+}
