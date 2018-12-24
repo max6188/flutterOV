@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:three/three_row_tile.dart'
+import 'package:three/three_row_tile.dart';
 
 void main() => runApp(MyApp());
 
@@ -55,42 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: ThreeRowTile(
-        icon: Icon(Icons.person),
-        title: _contacts?.items[index]?.lastName.toString().isEmpty &&
-            _contacts?.items[index]?.firstName.toString().isEmpty
-            ? null
-            : Text(
-          (_contacts?.items[index]?.lastName ?? "") +
-              ", " +
-              (_contacts?.items[index]?.firstName ?? ""),
-          textScaleFactor: globals.textScaleFactor,
-        ),
-        detail: Text(
-          _contacts?.items[index]?.lastActivity,
-          textScaleFactor: globals.textScaleFactor,
-        ),
-        utility1: _contacts?.items[index]?.dateCreated,
-        utility1Help: 'Date Created',
-        utility2: _contacts?.items[index]?.dateModified,
-        utility2Help: "Date Modified",
-        cell: _contacts?.items[index]?.cell,
-        home: _contacts?.items[index]?.home,
-        office: _contacts?.items[index]?.office,
-        email: _contacts?.items[index]?.email,
-        cellTapped: () {
-          globals.contactID = _contacts?.items[index]?.contactID;
-          Navigator.of(context).pushNamed("/contact_details").then((value) {
-            if (globals.infoChanged) {
-              _getData("", false).then((newitems) {
-                setState(() {
-                  _contacts = newitems;
-                });
-              });
-            }
-          });
-        },
-      ),
+      body: clasePrueba(new Text("hola"),(){
+        print("aca llega");
+      }),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
